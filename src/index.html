@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Pardo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    
+    <header class="header mt-5">
+        <div class="container">
+
+            <div class="header__content">
+                <div class="header__info">
+                    <h1 class="header__heading">Diseño y Desarrollo Web</h1>
+                    <p class="header__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nobis veritatis provident rerum enim ea doloribus ab, repellendus dolore odit eum quo! Harum rerum modi dolore, mollitia nesciunt cum. Voluptas.</p>
+                    <a class="header__button" id="headerButton">Ver Proyectos</a>
+                </div>
+    
+                <div class="header__image">
+                    <img loading="lazy" src="../img/development-4536630.svg" alt="Home">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,320L1440,288L1440,0L0,0Z"></path></svg>
+    </div>
+
+    <section class="about container">
+        <h2 class="about__heading text-center py-5">Sobre Mí</h2>
+
+        <div class="about__content">
+            <div class="about__info">
+                <h3 class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti, accusamus laboriosam vero at quas ducimus est sed. Hic est obcaecati quam vero autem reiciendis sequi dignissimos voluptate nihil eveniet?</h3> 
+            </div>
+
+            <div class="about__resume">
+                <picture>
+                    <source srcset="../build/img/curriculum.avif" type="image/avif">
+                    <source srcset="../build/img/curriculum.webp" type="image/webp">
+                    <img loading="lazy" src="../build/img/curriculum.png" alt="Resume Image">
+                </picture>
+                <div class="about__help__button">
+                    <a download="Descargar Curriculum" href="../CV Spanish.pdf" class="about__button">Descargar Curriculum</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <main class="projects py-5" id="showProjects">
+        <div class="container">
+            <h2 class="projects__heading text-center">Mis proyectos</h2>
+
+            <ul class="project">
+                <li class="project__li">
+                    <h3 class="project__text text-center">Agencia de Viajes</h3>
+                    <p class="project__description text-center">Proyecto FullStack creado con Node.JS y Express.</p>
+                    <a class="project__button" href="#" target="_blank">Ver Proyecto</a>
+                </li>
+
+                <li class="project__li">
+                    <h3 class="project__text text-center">CRM</h3>
+                    <p class="project__description text-center">Sistema de gestion de clientes con IndexedDB.</p>
+                    <a class="project__button" href="https://jscrm.netlify.app/" target="_blank">Ver Proyecto</a>
+                </li>
+
+                <li class="project__li">
+                    <h3 class="project__text text-center">Gestor de Gastos Semanales</h3>
+                    <p class="project__description text-center">Permite el ingreso de un gasto e indica el restante del presupuesto ingresado.</p>
+                    <a class="project__button" href="https://jsgastos.netlify.app/" target="_blank">Ver Proyecto</a>
+                </li>
+
+                <li class="project__li">
+                    <h3 class="project__text text-center">Buscador de Letras de Canciones</h3>
+                    <p class="project__description text-center">Tan facil como insertar el nombre de tu cancion y artista favorito.</p>
+                    <a class="project__button" href="https://cancionesjs.netlify.app/" target="_blank">Ver Proyecto</a>
+                </li>
+
+                <li class="project__li">
+                    <h3 class="project__text text-center">Administrador de Citas para Veterinaria</h3>
+                    <p class="project__description text-center">Administra citas tomando datos de la mascota y su dueño.</p>
+                    <a class="project__button" href="https://citasjs.netlify.app/" target="_blank">Ver Proyecto</a>
+                </li>
+
+                <li class="project__li">
+                    <h3 class="project__text text-center">Cotizador de Criptomonedas</h3>
+                    <p class="project__description text-center">Cotizador del 10 mejores criptomonedas, en diferentes divisas.</p>
+                    <a class="project__button" href="https://criptouptdateapi.netlify.app/" target="_blank">Ver Proyecto</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="contact">
+        <div class="container">
+            <h2 class="contact__heading text-center">Contáctame</h2>
+            <div class="contact__content">
+                
+                <div class="contact__image">
+                    <picture>
+                        <source srcset="../build/img/contacto.avif" type="image/avif">
+                        <source srcset="../build/img/contacto.webp" type="image/webp">
+                        <img loading="lazy" src="../build/img/contacto.png" alt="Contact Image">
+                    </picture>
+                </div>
+                
+                <form class="contact__form" id="form">
+                    <fieldset class="contact__fieldset">
+                        <div class="fields">
+                            <div class="contact__field">
+                                <label class="contact__label" for="name">Nombre:</label>
+                                <input class="contact__input" type="nombre" id="name" name="name" placeholder="Tu Nombre">
+                            </div>
+            
+                            <div class="contact__field">
+                                <label class="contact__label" for="email">Correo:</label>
+                                <input class="contact__input" type="email" id="email" name="email" placeholder="Tu Correo">
+                            </div>
+            
+                            <div class="contact__field">
+                                <label class="contact__label" for="message">Mensaje:</label>
+                                <textarea class="contact__textarea" id="message" name="message" cols="40" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact__help__submit">
+                            <input class="contact__submit" type="submit" value="Enviar">
+                        </div>
+
+                        <div class="sk-chase" id="spinner">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer__heading text-center">Diego Pardo</h3>
+            <p class="footer__text text-center">diegopar03@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
